@@ -1,17 +1,16 @@
 {
-  "name": "prototype",
-  "description": "Prototype Application",
-  "homepage": "https://github.com/coding-house-jan2015/prototype",
+  "name": "alerg-website",
+  "description": "alerg-website portfolio",
+  "homepage": "https://github.com/tjanszen/alerG---Website",
   "keywords": [
     "gulp",
     "jshint",
     "jscs",
     "server"
   ],
-  "author": "Chyld Medford <chyld.medford@gmail.com>",
+  "author": "Tommy Janszen <tommy.janszen@gmail.com>",
   "repository": {
-    "type": "git",
-    "url": "git://github.com/coding-house-jan2015/prototype.git"
+    "type": "git"
   },
   "version": "1.0.0",
   "scripts": {

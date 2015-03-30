@@ -5,412 +5,70 @@ html(lang='en')
     title Front-End Dev
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='/vendor/bootstrap/dist/css/bootstrap.min.css')
-    //- link(href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.2/united/bootstrap.min.css", rel="stylesheet")
     link(rel='stylesheet', href='/vendor/components-font-awesome/css/font-awesome.min.css')
     link(rel='stylesheet', href='/animate.css')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,400,300', type='text/css')
     link(rel='stylesheet', href='/style.css')
   body
-    .nav.navbar.navbar-default
-      .container-fluid
-        .navbar-header
-          button.navbar-toggle.collapsed(data-toggle="collapse", data-target="#navbar")
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-        #navbar.collapse.navbar-collapse
-          ul.nav.navbar-nav
-            li: a(href='#portfolio')
-                  i.fa.fa-laptop
-                  |&nbsp; Portfolio 
-            li: a(href='#experience')
-                  i.fa.fa-briefcase
-                  |&nbsp; Experience
-            li: a(href='#blog')
-                  i.fa.fa-newspaper-o
-                  |&nbsp; Blog
-            li: a(href='#about')
-                  i.fa.fa-male 
-                  |&nbsp; Me
     .container-fluid
-      .row#head.text-center
-        //- .col-xs-12.social-icons.text-center
-        //-   a(href='https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile')
-        //-     i.fa.fa-linkedin-square
-        //-   a(href='https://github.com/tjanszen')
-        //-     i.fa.fa-github
-        //-   a(href='https://twitter.com/tommyjanszen')
-        //-     i.fa.fa-twitter
-        //-   a(href='http://codepen.io/tommyjanszen/')
-        //-     i.fa.fa-codepen
-        //-   a(href='https://plus.google.com/u/0/118251629940912334931/about/p/pub')
-        //-     i.fa.fa-google-plus
-              
-        .col-xs-12#head-title.animated.fadeInUp
-          h1.animated.fadeInRight Tommy Janszen
-          h4.animated.fadeInLeft Front-End Developer
-          .col-xs-12.social-icons.text-center
-            a(target="_blank" href='https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile')
-              i.fa.fa-linkedin-square
-            a(target="_blank" href='https://github.com/tjanszen')
-              i.fa.fa-github
-            a(target="_blank" href='https://twitter.com/tommyjanszen')
-              i.fa.fa-twitter
-            a(target="_blank" href='http://codepen.io/tommyjanszen/')
-              i.fa.fa-codepen
-            a(target="_blank" href='https://plus.google.com/u/0/118251629940912334931/about/p/pub')
-              i.fa.fa-google-plus
-          a(href='mailto:tommy.janszen@gmail.com')      
-            button.btn.btn-primary#contact-me Contact
-          
-          //- #contactModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='contactModalLabel' aria-hidden='true')
-          //-   .modal-dialog
-          //-     .modal-content
-          //-       .modal-header
-          //-         button.close(type='button' data-dismiss='modal' aria-hidden='true') x
-          //-         h4#contactModalLabel.modal-title Contact Me
-          //-       .modal-body
-          //-         .form
-          //-           .form-group
-          //-             .input-group
-          //-               input#uName.form-control(type='text' placeholder='Name')
-          //-               label.input-group-addon.glyphicon.glyphicon-user(for='uName' )
-          //-           .form-group
-          //-             .input-group
-          //-               input#uSubject.form-control(type='text' placeholder='Subject')
-          //-               label.input-group-addon.glyphicon.glyphicon-user(for='uSubject')
-          //-       .modal-footer
-          //-         button.form-control.btn.btn-primary Send
-          //-         .progress
-          //-           .progress-bar.progress-bar-primary(role='progressbar' aria-valuenow='1' aria-valuemin='1' aria-valuemax='100' style='width:0%')
-          //-             span.sr-only progress
-      //- Portfolio section  
-      .row.title-row#portfolio
-        .col-xs-12.text-center 
-          h3.sub-header-portfolio Portfolio
-          span --
-          span 
-            i.fa.fa-laptop
-          span --
-          
-      .row
-        //- TOOR
-        .row.portfolio-item-right
-          .cover-slide
-          .col-xs-12.col-sm-6.right-section.text-right
-            .row
-              .col-xs-12.portfolio-title
-                h4 Toor: Crowdsourced Vacations
-                i.fa.fa-trophy.fa-4x 
-                span.first-place 1st Place - Sabre Corp: Launch 2015 
-            .row
-              .col-xs-12
-                blockquote.blockquote-reverse
-                  span Front-End
-                  p HTML5, CSS3, jQuery, Javascript, Bootstrap
-                blockquote.blockquote-reverse
-                  span Back-End
-                  p Node.js, MongoDB, Hapi.js, Mongoose
-                blockquote.blockquote-reverse
-                  span API's
-                  p Sabre Corp, Twitter, Mailchimp,
-                blockquote.blockquote-reverse
-                  span Tools
-                  p Moment.js, Lodash.js, Less, Jade, Gulp.js
-                  
-          a.toor-details(href='http://toor.club/')
-            .col-xs-12.col-sm-6.left-section.text-center
-              img.toor-img(src='img/toor1.png')
-              img.toor-img(src='img/toor2.png')
-        //- Underground Weather API
-        .row.portfolio-item-right
-          .cover-slide
-          .col-xs-12.col-sm-6.right-section.text-right
-            .row
-              .col-xs-12.portfolio-title
-                h4 Underground Weather API
-            .row
-              .col-xs-12
-                blockquote.blockquote-reverse
-                  span Front-End
-                  p HTML5, CSS3, jQuery, Javascript, Bootstra
-                blockquote.blockquote-reverse
-                  span API
-                  p Underground Weather 
-                blockquote.blockquote-reverse
-                  span Tools
-                  p Less, Jade, Gulp.js
-          a(target="_blank" href='http://tjanszen.github.io/Weather-App/')
-            .col-xs-12.col-sm-6.left-section.text-center
-              img#weather(src='img/weather.png')
-        //- Apartment U
-        .row.portfolio-item-right
-          .cover-slide
-          .col-xs-12.col-sm-6.right-section.text-right
-            .row
-              .col-xs-12.portfolio-title
-                h4 Apartment Management App
-            .row
-              .col-xs-12
-                blockquote.blockquote-reverse
-                  span Front-End
-                  p HTML5, CSS3, jQuery, Javascript, Bootstrap
-                blockquote.blockquote-reverse
-                  span Back-End
-                  p Node.js, MongoDB, Hapi.js, Mongoose
-                blockquote.blockquote-reverse
-                  span Tools
-                  p Moment.js, Lodash.js, Less, Jade, Gulp.js
-          a(target="_blank" href='https://still-fjord-9960.herokuapp.com/')
-            .col-xs-12.col-sm-6.left-section.text-center
-              img#weather(src='img/apartment.png')      
-        //- TO-Do
-        .row.portfolio-item-right
-          .cover-slide
-          .col-xs-12.col-sm-6.right-section.text-right
-            .row
-              .col-xs-12.portfolio-title
-                h4 To-Do App with Test Driven Development
-            .row
-              .col-xs-12
-                blockquote.blockquote-reverse
-                  span Front-End
-                  p HTML5, CSS3, jQuery, Javascript, Bootstrap
-                blockquote.blockquote-reverse
-                  span Back-End
-                  p Node.js, MongoDB, Hapi.js, Mongoose
-                blockquote.blockquote-reverse
-                  span Tools
-                  p Moment.js, Lodash.js, Less, Jade, Gulp.js
-          a.toor-details(target="_blank" href='http://toor.club/')
-            .col-xs-12.col-sm-6.left-section.text-center
-              img.todo-img1(src='img/todo1.png')
-              img.todo-img2(src='img/todo2.png')
-        //- Animal Adoption
-        .row.portfolio-item-right
-          .cover-slide
-          .col-xs-12.col-sm-6.right-section.text-right
-            .row
-              .col-xs-12.portfolio-title
-                h4 Animal Adoption App
-            .row
-              .col-xs-12
-                blockquote.blockquote-reverse
-                  span Front-End
-                  p HTML5, CSS3, jQuery, Javascript, Bootstrap
-                blockquote.blockquote-reverse
-                  span Back-End
-                  p Node.js, MongoDB, Hapi.js, Mongoose
-                blockquote.blockquote-reverse
-                  span Tools
-                  p Moment.js, Lodash.js, Less, Jade, Gulp.js
-          a(target="_blank" href='https://boiling-wildwood-9124.herokuapp.com/')
-            .col-xs-12.col-sm-6.left-section.text-center
-              img#weather(src='img/camp.png')
-        //- Website Template
-        .row.portfolio-item-right
-          .cover-slide
-          .col-xs-12.col-sm-6.right-section.text-right
-            .row
-              .col-xs-12.portfolio-title
-                h4 Portfolio Template
-            .row
-              .col-xs-12
-                blockquote.blockquote-reverse
-                  span Front-End
-                  p HTML5, CSS3, jQuery, Javascript
-                blockquote.blockquote-reverse
-                  span Tools
-                  p Less, Jade, Gulp.js
-          a(target="_blank" href='http://tjanszen.github.io/website-template-v1/')
-            .col-xs-12.col-sm-6.left-section.text-center
-              img#weather(src='img/template.png')
-        //- Countdown
-        .row.portfolio-item-right
-          .cover-slide
-          .col-xs-12.col-sm-6.right-section.text-right
-            .row
-              .col-xs-12.portfolio-title
-                h4 Countdown CLock
-            .row
-              .col-xs-12
-                blockquote.blockquote-reverse
-                  span Front-End
-                  p HTML5, jQuery, Javascript, Bootstrap
-          a(target="_blank" href='http://tjanszen.github.io/')
-            .col-xs-12.col-sm-6.left-section.text-center
-              img#weather(src='img/countdown.png')
-        //- Memory Game
-        .row.portfolio-item-right
-          .cover-slide
-          .col-xs-12.col-sm-6.right-section.text-right
-            .row
-              .col-xs-12.portfolio-title
-                h4 Memory Game
-            .row
-              .col-xs-12
-                blockquote.blockquote-reverse
-                  span Front-End
-                  p HTML5, jQuery, Javascript, Bootstrap
-                blockquote.blockquote-reverse
-                  span Tools
-                  p Less, Jade, Gulp.js
-          a(target="_blank" href='http://tjanszen.github.io/memory/')
-            .col-xs-12.col-sm-6.left-section.text-center
-              img#weather(src='img/memory.png')
-        //- Amazing Boxes 
-        .row.portfolio-item-right
-          .cover-slide
-          .col-xs-12.col-sm-6.right-section.text-right
-            .row
-              .col-xs-12.portfolio-title
-                h4 Amazing Boxes
-            .row
-              .col-xs-12
-                blockquote.blockquote-reverse
-                  span Front-End
-                  p HTML5, jQuery, Javascript, Bootstrap
-          a(target="_blank" href='http://tjanszen.github.io/boxes/')
-            .col-xs-12.col-sm-6.left-section.text-center
-              img#weather(src='img/boxes.png')
-      //- Work Experience section
-      .row.title-row#experience
-        .col-xs-12.text-center 
-          h3.sub-header-portfolio Work Experience
-          span --
-          span 
-            i.fa.fa-briefcase
-          span --
-          
-      .row#experince-content
-        .col-xs-12.col-sm-4
-          .row
-            .col-xs-offset-1.col-xs-10.experience-window#lisnr.text-center
-              a(target="_blank" href='https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile')
-                img(src='img/logos/lisnr.jpg')
-        .col-xs-12.col-sm-4
-          .row
-            .col-xs-offset-1.col-xs-10.experience-window#lux.text-center
-              a(target="_blank" href='https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile')
-                img(src='img/logos/cardinal.jpeg')
-        .col-xs-12.col-sm-4
-          .row
-            .col-xs-offset-1.col-xs-10.experience-window#possible.text-center
-              a(target="_blank" href='https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile')
-                img(src='img/logos/possible.jpg')
-      //- Blog Section
-      
-      .row.title-row#blog
-        .col-xs-12.text-center 
-          h3.sub-header-portfolio My blog
-          span --
-          span 
-            i.fa.fa-newspaper-o 
-          span --
-          
-      
-      .row#blog-content
-        .hidden-xs.col-sm-2.blog.text-center
-          span {
-        .col-xs-12.col-sm-8.blog
-          .row.blog-row
-            .hidden-xs.col-sm-2
-              .row.blog-date-number 25
-              .row.blog-date-month Feb
-            .col-xs-12.col-sm-10.blog-content
-              .row.blog-title
-                a(target="_blank" href='http://blog.tommyjanszen.com/full-circle/')
-                  h4 Full Circle
-              .row.blog-text
-                p Two years later I am developing full front-end to back-end web applications using four plus languages and an array of frameworks.
-          .row.blog-row
-            .hidden-xs.col-sm-2
-              .row.blog-date-number 13
-              .row.blog-date-month Feb
-            .col-xs-12.col-sm-10.blog-content
-              .row.blog-title
-                a(target="_blank" href='http://blog.tommyjanszen.com/always-pairing/')
-                  h4 Always Pairing
-              .row.blog-text
-                p Learning from others in any area of expertise is a huge opportunity to open one’s eyes to different perspectives. We all have two eyes for a reason.
-          .row.blog-row
-            .hidden-xs.col-sm-2
-              .row.blog-date-number 3
-              .row.blog-date-month Feb
-            .col-xs-12.col-sm-10.blog-content
-              .row.blog-title
-                a(target="_blank" href='http://blog.tommyjanszen.com/the-new-coding-slogan/')
-                  h4 The New Coding Slogan
-              .row.blog-text
-                p I challenge any coding program to take the above slogan instead of the typical “Learn to code in one month!”. First off, no one can become an expert in a one month timeframe.
-        .hidden-xs.col-sm-2.blog.text-center
-          span }
-              
-      //- About Section
-      
-      .row.title-row#about
-        .col-xs-12.text-center 
-          h3.sub-header-portfolio About Myself
-          span --
-          span 
-            i.fa.fa-male 
-          span --
-          
-      .row#about-content
-        .col-xs-12.col-sm-6
-          .col-xs-12.text-center
-            h3.sub-header-about ME
-            p 
-              span My goal is to create usable software that enhances the lives of billions. I am focused on Front-End Software Development technologies ranging from jQuery, Bootstrap, Javascript, HTML5, and CSS3. I am a huge advocate of leveraging tools such as Bower, Gulp, and Grunt to optimize productivity to efficiently write code. My number one priority is to always learn something new and to continually advance my skillsets as a developer. Complimenting my software development skills is my strong background in software project management. My background in software development combined with the power of project management allow me to see the entire software and business ecosystems. I have worked for digital marketing agencies, a software consulting firm, as well as a tech startup. These unique work environments allowed me to develop a diversified portfolio of skills any organization would want on their team.
-        .col-xs-12.col-sm-6
-          .col-xs-12.text-center
-            h3.sub-header-about Books I've Read
-          .row
-            .col-xs-2
-            .col-xs-10
-              h5 The Second Machine Age
-              p
-                span by Erik Brynjolfsson and Andrew McAfee
-          .row
-            .col-xs-2
-            .col-xs-10
-              h5 Things A Little Bird Told Me
-              p 
-                span by Biz Stone
-          .row
-            .col-xs-2
-            .col-xs-10
-              h5 How We Got to Now
-              p 
-                span by Steven Johnson
-          .row
-            .col-xs-2
-            .col-xs-10
-              h5 Think Like A Freak
-              p 
-                span by Steven D Levitt
-          .row
-            .col-xs-2
-            .col-xs-10
-              h5 Made To Stick
-              p  
-                span by Chip Heath and Dan Heath
-          .row
-            .col-xs-2
-            .col-xs-10
-              h5 Unlabel: Selling You Without Selling Out
-              p 
-                span by Marc Ecko
-          .row
-            .col-xs-2
-            .col-xs-10
-              h5 The Power of Habit
-              p 
-                span by Charles Duhigg
-              
-              
-              
+      .row#header-row
+        .col-lg-12.text-center
+          img#main-logo.animated.slideInDown(src='img/logo.svg')
+          h1#main-header.animated.slideInLeft  AlerG
+          h4#main-subheader.animated.slideInRight The World's First Open Sourced Gluten Free Database
 
+    .container.marketing.animated.slideInUp
+      .row
+        .col-lg-4.text-center
+          img.img-circle(src='img/product.svg' width='140' height='140')
+          h2.main-feature-headers SCAN
+          p.main-feature-text Scan a barcode and know instantly if that food product is Gluten Free. No more internet searches! Just scan and buy!
+          p
+            a.btn.btn-default(href='#scan') View Details
+        .col-lg-4.text-center
+          img.img-circle(src='img/discover.svg' width='140' height='140')
+          h2.main-feature-headers Discover
+          p.main-feature-text Our database is the fastest growing Gluten Free database in the world. Discover over 5,000 products stores in our database!
+          p
+            a.btn.btn-default(href='#discover') View Details
+        .col-lg-4.text-center
+          img.img-circle(src='img/add.svg' width='140' height='140')
+          h2.main-feature-headers Contribute
+          p.main-feature-text If the food product is not in our database, you are able to add the product to our database. Together we can help the world shop Gluten Free!
+          p
+            a.btn.btn-default(href='#contribute') View Details
+      hr.featurette-divider
+      .row.featurette#scan
+        .col-md-7
+          h2.featurette-heading It's easy. 
+            span.text-muted Just scan!
+          p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+        .col-md-5
+          img.featurette-image.img-responsive.center-block(src='img/home.jpg')
+      hr.featurette-divider#discover
+      .row.featurette
+        .col-md-7.col-md-push-5
+          h2.featurette-heading The answer you need. 
+            span.text-muted In the palm of your hand
+          p.lead Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+        .col-md-5.col-md-pull-7
+          img.featurette-image.img-responsive.center-block(src='img/scanned.jpg')
+      hr.featurette-divider#contribute
+      .row.featurette
+        .col-md-7
+          h2.featurette-heading No more guessing. 
+            span.text-muted Just pull up your favorites
+          p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+        .col-md-5
+          img.featurette-image.img-responsive.center-block(src='img/saved.jpg')
+      hr.featurette-divider
+      footer
+        p.pull-right
+          a(href='#') Back to top
+        p &copy; 2015 Tommy Janszen. &middot; 
+          a(href='#') Privacy
+          a(href='#') Terms
+          
     script(src='/vendor/jquery/dist/jquery.js')
-    script(src='/main.js')
     script(src='/vendor/bootstrap/dist/js/bootstrap.min.js')
+    script(src='/main.js')

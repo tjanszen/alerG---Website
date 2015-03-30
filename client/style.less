@@ -1,442 +1,64 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
-/** style guide
-
-colors:
-#bc271c;
-#aea79f;
-#dd4814;
-#38b44a;
-#772953;
-#efb73e;
-#df382c;
-#3a87ad;
-#468847
-
-**/
-
-/*****Main Content ****/
-
-/* Global */
-
-.container-fluid{
-  overflow-x: hidden;
-}
-
-.sub-header{
-  font-weight: 300;
-  color: #fff;
-}
-
-h3.sub-header-experience,
-h3.sub-header-portfolio,
-h3.sub-header-blog,
-h3.sub-header-about{
-  letter-spacing: 5px;
-  font-size: 22px;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-}
+// #myCarousel{
+//   height: 400px;
+// }
 
 
-body{
-  font-family: 'Open Sans';
-  font-size: 12px;
-}
-
-/** modal popup**/
-.modal-dialog {
-    width: 300px;
-}
-.modal-footer {
-    height: 70px;
-    margin: 0;
-}
-.modal-footer .btn {
-    font-weight: bold;
-}
-.modal-footer .progress {
-    display: none;
-    height: 32px;
-    margin: 0;
-}
-.input-group-addon {
-    color: #fff;
-    background: #3276B1;
-}
-
-/** main **/
-
-/** navbar **/
-
-.nav.navbar.navbar-default {
-  background-color: #eeeeee;
-}
-
-.navbar-default{
-  border-radius: 0;
-}
-
-.navbar{
-  margin-bottom:0;
-}
-
-.navbar-default .navbar-nav>li>a {
-  letter-spacing: 2px;
-  font-size: 14px;
-  font-weight: 300;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-
-}
-
-/* Row Titles */
-
-#head{
-  background: url(img/backround.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.row.title-row{
-  padding-top:30px;
-  padding-bottom:30px;
-  background:#eeeeee;
-}
-
-#head-title{
-  padding:150px 0;
-}
-/** header**/
-
-.row#head h1{
-  letter-spacing: 5px;
-  font-size: 45px;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-}
-
-.row#head h4{
-  letter-spacing: 5px;
-  font-size: 22px;
-  font-weight: 300;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-}
-
-.row#head h4{
-  padding-bottom: 15px;
-}
-
-#contact-me{
-  border: 1px solid #777;
-  color: #777;
-  background: rgba(255, 255, 255, 0);
-  letter-spacing: 2px;
-  font-size: 15px;
-  font-weight: 300;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-
-}
-
-#contact-me:hover{
-  background: rgba(226, 49, 44, 0.7);
-  color: #fff;
-}
-
-/** body **/
-
-
-.col-xs-12.social-icons{
-  margin-top:10px;
+//Main Header Section
+#header-row{
+  border-bottom: 1px solid #b2b2b2;
+  padding:0 0 50px 0;
   margin-bottom: 50px;
 }
 
-.col-xs-12.social-icons a{
-  margin: 15px;
+#main-header{
+  color: #11c1f3;
+  font-size: 6em;
+  font-family: 'PT Sans', sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.3em;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
 }
 
-.col-xs-12.social-icons a i{
-  font-size: 40px;
-  color: rgba(185, 185, 185, 0.7);
+#main-logo{
+  width: 250px;
 }
 
-.col-xs-12.social-icons a i:hover{
-  color: rgba(226, 49, 44, 0.7);
-}
-/* Portfolio style */
-
-
-.row.portfolio-item-right{
-  padding:20px;
-  border-bottom: 1px solid #d7d7d7;
-  position:relative;
-  overflow: hidden;
+#main-subheader{
+  color: #b2b2b2;
+  font-family: 'PT Sans', sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
 }
 
-.cover-slide{
-  position:absolute;
-  top:0;
-  left:0;
-  height:500px;
-  width:100%;
-  background: rgba(240, 240, 240, 0.5);
-  z-index:100;
-  transition: .5s all;
+//Main Feature Section
+.marketing{
 }
 
-.row.portfolio-item-right:hover .cover-slide{
-  top:800px
+.main-feature-headers{
+  color: #b2b2b2;
+  font-family: 'PT Sans', sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
 }
 
-.row.portfolio-item-right:hover blockquote span{
-  color: rgba(226, 49, 44, 0.7);
+.main-feature-text{
+  color: #606060;
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing:.1em;
 }
 
-.row.portfolio-item-right:hover blockquote{
-  border-right: 5px solid rgba(226, 49, 44, 0.5);
+//Featurette Section
+
+.featurette-heading{
+  color: #b2b2b2;
+  font-family: 'PT Sans', sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
 }
 
-.row.portfolio-item-right:hover a{
-  height:275px;
-}
-
-
-.col-xs-12.col-sm-8.left-8{
-  border-right:1px solid grey;
-}
-
-.right-section h4{
-  letter-spacing: 5px;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-}
-
-.right-section blockquote{
-  height:50px;
-}
-
-.right-section blockquote span{
-  letter-spacing: 3px;
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding-bottom: 0px;
-  margin-bottom: 10px;
-  color: #777;
-}
-
-.right-section blockquote p{
-  letter-spacing: 3px;
-  font-size: 8px;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding-bottom: 0px;
-  margin-bottom: 10px;
-  color: #777;
-}
-
-.right-section .portfolio-techs p{
-  text-align:right;
-}
-
-.text-right h5{
-  margin-top: 20px;
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 3px;
-}
-
-span.first-place{
-  letter-spacing: 5px;
-  font-size: 12px;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  color: #e9cf3d;
-}
-
-i.fa.fa-trophy.fa-4x{
-  color:#e9cf3d;
-}
-
-img.toor-img{
-  margin: 0 auto;
-  width: 280px;
-  display: block;
-}
-
-img.todo-img1{
-  margin: 0 auto;
-  width:300px;
-  display: block;
-  border: 1px solid #d9d9d9;
-}
-
-img.todo-img2{
-  margin: 0 auto;
-  width: 200px;
-  display: block;
-}
-/* Weather */
-
-#weather, #apartment, #countdown, #camp, #memory, #boxes{
-  height:250px;
-}
-
-/* Work Experience Section */
-
-#experince-content{
-  padding:100px 0;
-  background: url(img/exp-back.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-#experince-content img{
-  height: 200px;
-  opacity: .9;
-  padding: 25px 0;
-
-}
-
-/* Blog Section */
-
-.row#blog-content{
-  background-color:#fff;
-  padding-top:50px;
-  padding-bottom:50px;
-}
-
-.row.blog-text p{
-  color: #c8c8c8;
-}
-
-h3.sub-header-blog{
-  text-align:center;
-  color: #117EDB;
-}
-
-.blog-row{
-  margin-top:10px;
-}
-
-.row.blog-date-number,
-.row.blog-date-month{
-  text-align:center;
-}
-
-.row.blog-date-number{
-  color: rgba(226, 49, 44, 0.7);
-  letter-spacing: 3px;
-  font-size: 30px;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding-bottom: 0px;
-  margin-bottom: 10px;
-}
-
-.row.blog-date-month{
-  color: #c8c8c8;
-  letter-spacing: 3px;
-  font-size: 20px;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding-bottom: 0px;
-  margin-bottom: 10px;
-  color: #777;
-}
-
-.blog-content{
-  border-left: 1px solid rgba(226, 49, 44, 0.7);
-}
-
-.row.blog-title h4,
-.row.blog-text p{
-  padding-left:15px;
-  letter-spacing: 3px;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding-bottom: 0px;
-  margin-bottom: 10px;
-}
-
-.row.blog-title h4{
-  font-size:20px;
-  color: rgba(226, 49, 44, 0.7);
-}
-
-.row.blog-title a{
-  text-decoration: none;
-}
-
-.row.blog-title a:hover h4{
-  color: rgb(164, 36, 36);
-}
-
-.row.blog-text{
-  font-size: 12px;
-  line-height: 20px;
-}
-
-.blog span{
-  font-size: 20em;
-  color: rgba(226, 49, 44, 0.7);
-  display:inline-block;
-  vertical-align:middle;
-}
-
-/* About section */
-#about-content{
-  margin-top:25px;
-  margin-bottom:75px;
-}
-
-#about-content h4{
-  margin-left:20px;
-}
-#about-content p{
-  padding-left:15px;
-  letter-spacing: 3px;
-  font-weight: 300;
-  text-transform: uppercase;
-  padding-bottom: 0px;
-  margin-bottom: 10px;
-  border-left: 3px solid rgba(226, 49, 44, 0.7);
-}
-
-#about-content p span{
-  display: inline-block;
-  margin-left: 20px;
-  text-align:left;
-}
-
-
-@media (max-width: 600px) {
-  .cover-slide {
-    visibility: hidden;
-  }
-
-  .row.portfolio-item-right blockquote span{
-    color: rgba(226, 49, 44, 0.7);
-  }
-
-  .row.portfolio-item-right blockquote{
-    border-right: 5px solid rgba(226, 49, 44, 0.5);
-  }
-
+.lead{
+  color: #606060;
+  font-family: 'PT Sans', sans-serif;
 }
